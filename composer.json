@@ -1,0 +1,16 @@
+{
+    "name": "yashpatil/company",
+    "autoload": {
+        "psr-4": {
+            "yashpatil\\company\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Company"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.5"
+    }
+}
