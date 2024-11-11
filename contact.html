@@ -132,7 +132,7 @@
     </script>
     
     <section class="faq">
-        <h1 class="heading">FAQ</h1>
+        <h1 class="heading" style="color: #00bfff;" id="faq">FAQ</h1>
         <div class="row">
             <div class="accordion-container">
                 <div class="accordion">
@@ -191,7 +191,15 @@
             </div>
         </div>
     </section>
-  
+    <script>
+      document.querySelectorAll('.accordion-header').forEach(header => {
+        header.addEventListener('click', () => {
+            const accordion = header.parentElement;
+            accordion.classList.toggle('active');
+        });
+      });
+
+    </script>
     
     <div class="footer">
         <div class="footer-top">

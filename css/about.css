@@ -52,11 +52,11 @@ body{
 
 .header .navbar ul li a{
     font-size: 2rem;
-    color: #fff;
+    color: #ffb056;
 }
 
 .header .navbar ul li a:hover{
-    color: #00bfff;
+    color: #ffb056;
     text-decoration: none;
 }
 
@@ -71,20 +71,6 @@ body{
     display: none;
 }
 
-.home{
-    min-height: 70vh;
-    width: 100vw;
-    background-image: url(../images/img3.jpg);
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    text-align: center;
-    padding: 0 1rem;
-    position: relative;
-    overflow: hidden !important;
-}
 
 .heading{
     padding-top: 6rem;
@@ -116,52 +102,157 @@ body{
 }
  
 
-.container h1{
-    font-size: 32px;
-    text-align:left;
-    margin-top: 120px;  
+ /* About Section */
+ .about-section {
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 80px;
 }
-.about{
+.about-section h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.about-section p {
     font-size: 20px;
-    text-align:center;
-}
-.profile-section {
-    display: flex; /* Use flexbox to align items */
-    align-items: center; /* Center items vertically */
-    gap: 30px; /* Space between image and text */
+    max-width: 1100px;
+    margin: 0 auto;
+    color: #555;
+    line-height: 1.8;
 }
 
+  /* Profile Section */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+  .profile-section {
+    
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.profile-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Image */
 .profile-image img {
-    width: 400px; /* Set width */
-    height: 400px; /* Set height */
-    object-fit: cover; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: add rounded corners */
-    margin-left: 90px;
-    margin-bottom: 60px;
+    width: 230px;
+    height: 250px;
+    border-radius: 8px;
+    border: 2px solid #00bfff;
+    margin-right: 20px;
 }
 
+/* Profile Content */
 .profile-content {
-    flex: 1; /* Allow content to take available space */
+    flex: 1;
 }
-
 .profile-name {
-    font-size: 34px; /* Adjust the font size as needed */
-    margin: 0; /* Remove default margin */
-    text-decoration: solid;
-    text-align: top;
+    font-size: 24px;
+    color: #ffbb27;
+    font-weight: bold;
 }
-
 .profile-description {
-    margin-top: 10px; /* Space between name and description */
-    font-size: 20px;
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 10px;
 }
 
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
 
+/* Title */
+.title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff9e0b; 
+    margin-bottom: 30px;
 
+}
 
+/* Map Section */
+.map-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+    
+    
+}
 
+/* Map Image */
+.map {
+    position: relative;
+    width: 700px;
+    height: 550px;
+    background: url('https://firstfiddle.in/_next/image?url=%2Fimages%2Ffranchise%2Fmap.png&w=640&q=75') no-repeat center;
+    background-size: contain;
+}
 
+/* Location Markers */
+.marker {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #ff9e0b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+}
 
+/* Marker Positions (adjust these based on your map) */
+.marker-a { top: 23%; left: 35%; } /* Example position for marker A */
+.marker-b { top: 35%; left: 30%; }
+.marker-c { top: 40%; left: 65%; }
+.marker-d { top: 80%; left: 50%; }
+.marker-e { top: 60%; left: 70%; }
+
+/* Location Lists */
+.locations {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.location-group {
+    text-align: left;
+}
+.location-group h3 {
+    color: #ff9e0b;
+    font-size: 26px;
+    margin: 0;
+}
+.location-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+}
+.location-group ul li {
+    font-size: 16px;
+    color: #2c2c2c;
+}
 
 
 .footer {
@@ -293,7 +384,7 @@ body{
     color: black;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .footer .credit {
         text-align: right;
     }

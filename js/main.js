@@ -75,3 +75,13 @@ $('.accordion-header').click(function(){
 });
 
 });
+
+function openForm(jobTitle) {
+    document.getElementById('formModal').style.display = 'flex';
+    document.getElementById('jobTitle').textContent = `Apply for ${jobTitle}`;
+  }
+  
+  function closeForm() {
+    document.getElementById('formModal').style.display = 'none';
+  }
+  

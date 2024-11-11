@@ -51,11 +51,11 @@ body{
 
 .header .navbar ul li a{
     font-size: 2rem;
-    color: #fff;
+    color: #ffb056;
 }
 
 .header .navbar ul li a:hover{
-    color: #00bfff;
+    color: #ffb056;
     text-decoration: none;
 }
 
@@ -98,6 +98,8 @@ body{
     right: -2rem;
     transform: rotate(180deg);
 }
+
+
 .section-head{
     margin: 2rem;
     padding-top: 8rem;
@@ -145,6 +147,13 @@ body{
     color: #007bff;
     transition: transform 0.3s;
   }
+
+  .accordion-header h3 {
+    font-size: 20px;
+    color: #007bff;
+    transition: transform 0.3s;
+    margin-left: 10px;
+  }
   
   .accordion-body {
     display: none;
@@ -163,6 +172,7 @@ body{
     transform: rotate(45deg);
   }
   
+
 .footer {
     position: relative;
     padding: 0 0 30px 0;
