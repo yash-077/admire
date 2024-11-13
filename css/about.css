@@ -365,13 +365,30 @@ body{
     color: black;
 }
 
-@media (max-width: 768px) {
-    .footer .credit {
-        text-align: right;
+@media (max-width: 380px) {
+    .header .logo img{
+        width: 80%;
+        height: 3rem;
+        top: 0;
+        left: 0;
     }
-    
-    .footer .copyright {
-        text-align: left;
+}
+
+@media (max-width: 768px) {
+    .header .logo img{
+        width: 80%;
+        height: 3rem;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media (max-width: 980px) {
+    .header .logo img{
+        width: 80%;
+        height: 3rem;
+        top: 0;
+        left: 0;
     }
 }
 

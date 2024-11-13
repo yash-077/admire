@@ -312,13 +312,57 @@ header.header {
     color: black;
 }
 
-@media (min-width: 768px) {
-    .footer .credit {
-        text-align: right;
+
+@media (max-width: 380px) {
+    .header .logo img{
+        width: 80%;
+        height: 3rem;
+        top: 0;
+        left: 0;
     }
-    
-    .footer .copyright {
-        text-align: left;
+
+    .footer h4 {
+        font-size: 30px;
+        color: #f8f8f8;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    .footer p {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .footer-links ul li {
+        padding: 8px 0;
+        text-align: center;
+    }
+    .footer-contact li {
+        margin-bottom: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .social-links {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+      }
+}
+
+@media (max-width: 768px) {
+    .header .logo img{
+        width: 80%;
+        height: 3rem;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media (max-width: 980px) {
+    .header .logo img{
+        width: 80%;
+        height: 3rem;
+        top: 0;
+        left: 0;
     }
 }
 

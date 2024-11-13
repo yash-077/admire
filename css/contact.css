@@ -446,6 +446,66 @@ textarea {
     color: black;
 }
 
+@media (max-width: 380px) {
+    .row {
+        margin: 20px auto; /* Center the row */
+        max-width: 330px; /* Limit maximum width */
+    }
+    
+    .contact-info {
+        background-color: #f8f3c1; /* White background for contact info */
+        font-size: 14px;
+        padding: 20px; /* Add padding */
+        border-radius: 30px; /* Rounded corners */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        margin-left: -10px;
+        margin-top: 10px;
+    }
+    .faq {
+        padding: 50px 20px;
+        max-width: 350px;
+        margin: auto;
+        border-radius: 8px;
+        background-color: #ffd154;
+    }
+    .heading {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #00bfff;
+        margin-bottom: 2rem;
+        margin-top: -150px;
+        margin-left: 130px;
+    }
+    .footer h4 {
+        font-size: 30px;
+        color: #f8f8f8;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    .footer p {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .footer-links ul li {
+        padding: 8px 0;
+        text-align: center;
+    }
+    .footer-contact li {
+        margin-bottom: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .social-links {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+      }
+                
+        
+}
+
 @media (max-width: 768px) {
     .footer .credit {
         text-align: right;

@@ -348,6 +348,54 @@ body{
     color: black;
 }
 
+@media (max-width: 380px) {
+  .header .logo img{
+      width: 80%;
+      height: 3rem;
+      top: 0;
+      left: 0;
+  }
+  .accordion-container {
+    width: 100%;
+    max-width: 330px;
+    margin: 0 auto;
+    padding-top: 20px;
+   
+  }
+  .brands-container {
+    width: 90%;
+    max-width: 350px;
+    margin: 40px auto;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .footer h4 {
+    font-size: 30px;
+    color: #f8f8f8;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.footer p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+.footer-links ul li {
+    padding: 8px 0;
+    text-align: center;
+}
+.footer-contact li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+.social-links {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+}
+
 @media (min-width: 768px) {
     .footer .credit {
         text-align: right;
