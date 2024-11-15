@@ -98,19 +98,19 @@
           <form id="jobForm">
         
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required placeholder="Enter your Name">
       
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required placeholder="Enter your Email">
 
-            <label for="email">Mobile No</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="email">Year of experience</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="coverLetter">Cover Letter</label>
-            <textarea id="coverLetter" name="coverLetter" rows="4" required></textarea>
+            <label for="mobile">Mobile No</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required placeholder="Enter your mobile number">
+            
+            <label for="experience">Year of Experience</label>
+            <input type="number" id="experience" name="experience" required min="0" placeholder="Enter your years of experience">
+            
+            <label for="coverLetter">Details</label>
+            <textarea id="coverLetter" name="coverLetter" rows="4"></textarea>
 
             <label for="resume">Resume</label>
             <input type="file" id="resume" name="resume" required>
