@@ -188,14 +188,13 @@ label {
 }
 
 .form-control {
-    width: 100%;            /* Makes the input take up the full width of its container */
-    height: 100px;           /* Increases the height of the input field */
-    padding: 10px 15px;     /* Adds padding for a larger clickable area */
-    font-size: 18px;        /* Increases the font size */
+    font-size: 20px; /* Increase font size for better readability */
+    padding: 40px;   /* Add more padding for larger input fields */
+    width: 100%;     /* Ensure the fields are responsive */
+    height: auto;       /* Adds padding for a larger clickable area */
     border: 1px solid #ccc; /* Adjusts the border style */
-    border-radius: 5px;     /* Adds rounded corners */
-    box-sizing: border-box; /* Ensures padding doesn't affect the width */
-  }
+    border-radius: 5px;     /* Adds rounded corners */   
+}
 
 
 .form-control:focus {
@@ -208,17 +207,25 @@ textarea {
     resize: none; /* Disable resizing */
 }
 
-.btn-dark {
-    background-color: #343a40; /* Dark button color */
-    color: #ffffff; /* White text */
-    border: none; /* Remove border */
-    border-radius: 4px; /* Rounded corners */
-    padding: 10px 20px; /* Padding inside button */
-    transition: background-color 0.2s; /* Transition for background color */
+.btn-submit {
+    display: block;
+    width: 16%;
+    padding: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #007bff; /* Blue background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 300px;
 }
 
-.btn-dark:hover {
-    background-color: #495057; /* Darken button on hover */
+.btn-submit:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.0); /* Slight zoom effect */
 }
 
 .text-center {

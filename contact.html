@@ -62,74 +62,57 @@
             </div>
         </div>
         
-        <div class=" form col-md-8 col-lg-8">
-            <form onsubmit="handleSubmit(event)">
+        <div class="form col-md-8 col-lg-8">
+            <form action="contactme.php" method="POST">
                 <div class="form-group my-3">
                     <label for="name">Full Name</label>
                     <input
                         type="text"
                         class="form-control"
+                        name="name"
                         id="name"
                         placeholder="Enter your name"
                         required
-                        minlength="3"  /> <!-- Minimum length validation -->
-                   
+                        minlength="3" />
                 </div>
                 <div class="form-group my-3">
                     <label for="email">Email</label>
                     <input
                         type="email"
                         class="form-control"
+                        name="email"
                         id="email"
                         placeholder="name@example.com"
-                        required
-                    />
+                        required />
                 </div>
                 <div class="form-group my-3">
                     <label for="mobile">Mobile Number</label>
                     <input
                         type="tel"
                         class="form-control"
+                        name="mobile"
                         id="mobile"
                         placeholder="Enter your mobile number"
                         required
-                        pattern="^[0-9]{10}$" /> <!-- 10-digit mobile number -->
+                        pattern="^[0-9]{10}$" />
                 </div>
                 <div class="form-group my-3">
                     <label for="message">Message</label>
                     <textarea
                         rows="5"
                         class="form-control"
+                        name="message"
                         id="message"
                         placeholder="Enter your message"
                         required
-                        minlength="10" ></textarea>  <!-- Minimum length validation -->
-                    
+                        minlength="10"></textarea>
                 </div>
-                <div class="text-center">
-                    <button
-                        class="my-2 px-4 mx-auto btn btn-dark"
-                        type="submit"
-                    >
-                        Send
-                    </button>
-                </div>
-                <div class="text-center mt-3" id="submission-status" style="display: none;">
-                    <p></p> <!-- Status message will be dynamically inserted here -->
-                </div>
+                <button class="btn-submit" type="submit">Send</button>
             </form>
         </div>
+        
+        
     </div>
-    
-    <script>
-        function handleSubmit(event) {
-            event.preventDefault();
-            // Here, you would handle the form submission logic
-            const submissionStatusElement = document.getElementById('submission-status');
-            submissionStatusElement.style.display = 'block';
-            submissionStatusElement.querySelector('p').innerText = 'Form submitted successfully!';
-        }
-    </script>
     
     <section class="faq">
         <h1 class="heading" style="color: #00bfff;" id="faq">FAQ</h1>
