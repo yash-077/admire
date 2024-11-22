@@ -244,7 +244,8 @@ textarea {
     max-width: 1200px;
     margin: auto;
     border-radius: 8px;
-    background-color: #ffd154;
+    margin-bottom: 30px;
+    background-color: #d3d3d3;
 }
 
 .heading {
@@ -254,7 +255,7 @@ textarea {
     color: #00bfff;
     margin-bottom: 2rem;
     margin-top: -100px;
-    margin-left: 450px;
+    margin-left: 460px;
 }
 
 .accordion-container {

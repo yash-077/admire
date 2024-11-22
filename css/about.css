@@ -170,90 +170,80 @@ body{
     margin-top: 10px;
 }
 
-  /* Container */
-  .container {
+/* Map Section */
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 20px;
     text-align: center;
-}
-
-/* Title */
-.title {
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-    color: #ff9e0b; 
-    margin-bottom: 30px;
-
-}
-
-/* Map Section */
-.map-section {
+  }
+  
+  .title {
+      text-align: center;
+      font-size: 34px;
+      font-weight: bold;
+      color: #ff9900; 
+      margin-bottom: 30px;
+      margin-top: 20px;
+  
+  }
+  
+  .map-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-top: 30px;  
+      margin-bottom: 100px; 
+  }
+  
+  /* Map Image */
+  .map {
+      position: relative;
+      width: 700px;
+      height: 550px;
+      background-size: contain;
+  }
+  
+  
+  /* Location Lists */
+  .locations {
+    flex: 1 1 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin-top: 30px;
-    
-    
-}
-
-/* Map Image */
-.map {
-    position: relative;
-    width: 700px;
-    height: 550px;
-    background: url('https://firstfiddle.in/_next/image?url=%2Fimages%2Ffranchise%2Fmap.png&w=640&q=75') no-repeat center;
-    background-size: contain;
-}
-
-/* Location Markers */
-.marker {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: #ff9e0b;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-/* Marker Positions (adjust these based on your map) */
-.marker-a { top: 23%; left: 35%; } /* Example position for marker A */
-.marker-b { top: 35%; left: 30%; }
-.marker-c { top: 40%; left: 65%; }
-.marker-d { top: 80%; left: 50%; }
-.marker-e { top: 60%; left: 70%; }
-
-/* Location Lists */
-.locations {
-    display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
-}
-.location-group {
-    text-align: left;
-}
-.location-group h3 {
-    color: #ff9e0b;
-    font-size: 26px;
-    margin: 0;
-}
-.location-group ul {
+  }
+  
+  .location-group {
+    flex: 1 1 calc(45% - 20px); /* Two columns with spacing */
+    background-color: #ffffff;
+    padding: 0px;
+    border-radius: 10px;
+  }
+  
+  .location-group h3 {
+    font-size: 24px;
+    color: #ffa51e;
+    margin-bottom: 6px;
+    padding-bottom: 4px;
+  }
+  
+  .location-group ul {
     list-style: none;
     padding: 0;
-    margin: 5px 0;
-}
-.location-group ul li {
+    margin: 0;
+  }
+  
+  .location-group ul li {
     font-size: 16px;
-    color: #2c2c2c;
-}
+    color: #222222;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
 
+  
 /* Footer styling */
   
 .footer {
