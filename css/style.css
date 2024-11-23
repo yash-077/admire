@@ -268,7 +268,7 @@ body{
     margin-bottom: 30px;
   }
 
-  .brands-grid {
+  .brand-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -306,14 +306,14 @@ body{
     justify-content: center;
     background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 20px;
     font-weight: bold;
     border-radius: 10px;
   }
   
   .brand-name {
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     color: #ffd414;
   }
